@@ -593,6 +593,18 @@ section.bg-subtle {
   background-color: var(--color-accent-soft);
 }
 
+/* Botón "todavía no existe": visualmente apagado y sin interacción.
+   pointer-events:none ya evita el click, pero el color/cursor
+   es lo que le avisa al usuario ANTES de intentarlo. */
+.btn-primary.is-disabled,
+.btn-secondary.is-disabled {
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-tertiary);
+  border-color: var(--color-border);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* ============================================
    ABOUT
    ============================================ */
