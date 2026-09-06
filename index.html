@@ -3,181 +3,271 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcos Romá · Desarrollador Web</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="Portfolio de Marcos Romá, desarrollador web en formación."
+    />
+    <title>Marcos Romá | Desarrollador web</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Mono:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="hero-shapes" aria-hidden="true">
-      <div class="orb-axis orb-axis-1">
-        <div class="glow-orb glow-orb-1"></div>
-      </div>
-      <div class="orb-axis orb-axis-2">
-        <div class="glow-orb glow-orb-2"></div>
-      </div>
-      <div class="orb-axis orb-axis-3">
-        <div class="glow-orb glow-orb-3"></div>
-      </div>
-      <div class="particles" id="particles"></div>
-    </div>
-
-    <header id="header">
-      <nav>
-        <a href="#hero" class="logo">Marcos Romá</a>
-        <ul>
+    <header class="site-header" id="header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="logo" href="#hero" aria-label="Ir al inicio"
+          ><img src="assets/marcos-roma-logo-transparent.png" alt="Marcos Romá"
+        /></a>
+        <ul class="nav-links">
           <li><a href="#about">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#footer">Contacto</a></li>
         </ul>
+        <span class="nav-status"><span></span> 2º DAW · En curso</span>
       </nav>
     </header>
 
     <main>
-      <section id="hero">
-        <div class="container">
-          <span class="hero-badge">Desarrollador Web</span>
-          <h1>Hola, soy<br /><span class="accent">Marcos Romá</span></h1>
-          <p class="hero-sub">
-            Estudiante de DAW apasionado por crear interfaces limpias y
-            funcionales.
-          </p>
-          <a href="#projects" class="btn-primary">Ver proyectos</a>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="container">
-          <p class="section-label">— Sobre mí —</p>
-          <div class="about-grid">
-            <div class="about-text">
-              <h2>Quién soy</h2>
-              <p>
-                Desarrollador web en formación, con las ideas claras sobre a
-                dónde voy.
-              </p>
-              <p>
-                Vengo de la construcción, así que sé lo que es trabajar duro y
-                resolver problemas con lo que tienes. Cuando descubrí la
-                programación entendí que podía aplicar esa misma mentalidad a
-                algo que me apasiona de verdad.
-              </p>
-              <p>
-                Busco proyectos con reto real donde seguir creciendo. Si algo me
-                frena, lo resuelvo. Si no sé cómo, lo aprendo.
-              </p>
-            </div>
-            <div class="about-image">
-              <img src="assets/sobre-mi.jpg" alt="Marcos Romá" />
+      <section class="hero" id="hero">
+        <div class="hero-grid container">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> Portfolio 2026 · Marcos Romá
+            </p>
+            <h1>Aprender.<br /><em>Crear. Mejorar.</em></h1>
+            <p class="hero-intro">
+              Soy Marcos Romá, estudiante de segundo de DAW. Exploro el
+              desarrollo web construyendo interfaces, aplicaciones y
+              experimentos digitales.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-dark" href="#projects"
+                >Ver proyectos <span>↘</span></a
+              >
+              <a class="text-link" href="#about">Mi recorrido <span>↓</span></a>
             </div>
           </div>
-          <p class="skills-label">— Skills —</p>
-          <div class="skills">
-            <div class="chip"><i class="devicon-html5-plain"></i></div>
-            <div class="chip"><i class="devicon-css3-plain"></i></div>
-            <div class="chip"><i class="devicon-javascript-plain"></i></div>
-            <div class="chip"><i class="devicon-java-plain"></i></div>
-            <div class="chip">
-              <i class="devicon-azuresqldatabase-plain"></i>
+          <div class="hero-visual">
+            <div class="hero-terminal">
+              <div class="terminal-topbar"><span class="terminal-dots"><i></i><i></i><i></i></span><span>marcos@portfolio:~</span><span class="terminal-online">● online</span></div>
+              <div class="terminal-content">
+                <p class="terminal-command"><b>~ $</b> whoami</p>
+                <p class="terminal-name">marcos_roma</p>
+                <p class="terminal-role">web developer in progress</p>
+                <div class="terminal-rule"></div>
+                <div class="terminal-data"><span>LEVEL</span><strong>02</strong><span>STATUS</span><strong>LEARNING</strong></div>
+                <div class="terminal-stack"><span>HTML</span><span>CSS</span><span>JS</span><span>JAVA</span></div>
+                <p class="terminal-command terminal-last"><b>~ $</b> build --next-project<span class="terminal-cursor"></span></p>
+              </div>
             </div>
-            <div class="chip"><i class="devicon-git-plain"></i></div>
+            <span class="hero-orbit hero-orbit-top"
+              >LEVEL_02<br />DAW STUDENT</span
+            >
+            <span class="hero-orbit hero-orbit-bottom">✳ Diseño · Código</span>
+          </div>
+        </div>
+        <div class="hero-marquee" aria-hidden="true">
+          <div class="hero-marquee-track">
+            <span
+              >HTML · CSS · JAVASCRIPT&nbsp;&nbsp;&nbsp; // &nbsp;&nbsp;&nbsp;JAVA · SPRING BOOT&nbsp;&nbsp;&nbsp; // &nbsp;&nbsp;&nbsp;SQL · POSTGRESQL&nbsp;&nbsp;&nbsp; // &nbsp;&nbsp;&nbsp;CANVAS · CHART.JS · REST API · DOCKER&nbsp;&nbsp;&nbsp;</span
+            >
           </div>
         </div>
       </section>
 
-      <section id="projects">
+      <section class="about section container" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">02 · Sobre mí</p>
+          <h2>
+            Curiosidad para aprender.<br /><em>Constancia para terminar.</em>
+          </h2>
+        </div>
+        <div class="about-content">
+          <div class="about-photo">
+            <img src="assets/sobre-mi.jpg" alt="Marcos Romá" />
+          </div>
+          <div class="about-text">
+            <p class="lead">
+              Vengo de la construcción, así que estoy acostumbrado a trabajar
+              duro, resolver problemas y cuidar los detalles.
+            </p>
+            <p>
+              Cuando descubrí la programación entendí que podía aplicar esa
+              misma mentalidad a algo que me apasiona de verdad. Ahora
+              desarrollo proyectos con HTML, CSS, JavaScript y Java mientras
+              sigo ampliando mis herramientas.
+            </p>
+            <div class="skill-list" aria-label="Tecnologías">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span
+              ><span>Java</span><span>Spring Boot</span><span>SQL</span
+              ><span>PostgreSQL</span><span>Canvas</span
+              ><span>Chart.js</span><span>REST API</span><span>Docker</span
+              ><span>Git</span>
+            </div>
+            <a class="text-link" href="mailto:marcos.roma.dev@gmail.com"
+              >Hablemos <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
         <div class="container">
-          <p class="section-label">— Proyectos —</p>
+          <div class="projects-heading">
+            <div>
+              <p class="eyebrow">03 · Trabajo seleccionado</p>
+              <h2>Proyectos con<br /><em>algo que contar.</em></h2>
+            </div>
+            <p class="projects-count">
+              04 proyectos<br />y contando<span>↘</span>
+            </p>
+          </div>
           <div class="projects-grid">
-            <article class="project-card">
-              <img src="assets/finances.jpg" alt="Finanzas" />
-              <h3>App Web Control de Finanzas Personales</h3>
-              <p>Aplicación de gestión financiera personal con CRUD completo</p>
-              <div class="skills">
-                <div class="chip"><i class="devicon-html5-plain"></i></div>
-                <div class="chip"><i class="devicon-css3-plain"></i></div>
-                <div class="chip"><i class="devicon-javascript-plain"></i></div>
-                <div class="chip"><i class="devicon-java-plain"></i></div>
-                <div class="chip"><i class="devicon-spring-plain"></i></div>
-                <div class="chip"><i class="devicon-chartjs-plain"></i></div>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://marcosromadev.github.io/ProyectoFinanzas/"
-                  class="btn-primary"
-                  target="_blank"
-                  rel="noopener"
-                  >Demo</a
+            <article class="project-card project-card-featured">
+              <a
+                class="project-image project-image-msch"
+                href="https://www.msch.es"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visitar MSCH Diseño y Construcción"
+              >
+                <span class="project-index">01</span>
+                <span class="image-label"
+                  >MSCH <small>Diseño y Construcción</small></span
                 >
-                <a
-                  href="https://github.com/MarcosRomaDev/ProyectoFinanzas"
-                  class="btn-secondary"
-                  target="_blank"
-                  rel="noopener"
-                  >Repo</a
-                >
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="assets/pixel-run.jpg" alt="Pixel Run" />
-              <h3>Pixel Run</h3>
-              <p>
-                Endless runner 2D hecho desde cero con Canvas y JavaScript puro:
-                física, colisiones y dificultad progresiva propias.
-              </p>
-              <div class="skills">
-                <div class="chip"><i class="devicon-html5-plain"></i></div>
-                <div class="chip"><i class="devicon-css3-plain"></i></div>
-                <div class="chip"><i class="devicon-javascript-plain"></i></div>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://marcosromadev.github.io/pixel-run/"
-                  class="btn-primary"
-                  >Demo</a
-                >
-                <a
-                  href="https://github.com/MarcosRomaDev/pixel-run"
-                  class="btn-secondary"
-                  >Repo</a
-                >
+                <span class="image-arrow">↗</span>
+              </a>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">Web corporativa · 2026</p>
+                  <h3>MSCH Diseño y Construcción</h3>
+                </div>
+                <p class="project-description">
+                  Web corporativa desarrollada para presentar los servicios,
+                  proyectos y forma de trabajar de una empresa de reformas y
+                  obra nueva en la Costa Blanca. El objetivo era transmitir
+                  confianza desde el primer vistazo y facilitar el contacto.
+                </p>
+                <div class="project-footer">
+                  <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                  </div>
+                  <a
+                    class="project-link"
+                    href="https://www.msch.es"
+                    target="_blank"
+                    rel="noopener"
+                    >Visitar web ↗</a
+                  >
+                </div>
               </div>
             </article>
 
             <article class="project-card">
-              <img src="assets/crosslert.jpg" alt="App del tiempo" />
-              <h3>Crosslert</h3>
-              <p>***En Construcción***</p>
-              <p>
-                App multiusuario para seguir acciones, con watchlist, alertas de
-                precio y análisis técnico (SMA, EMA, RSI).
-              </p>
-              <div class="skills">
-                <div class="chip"><i class="devicon-html5-plain"></i></div>
-                <div class="chip"><i class="devicon-css3-plain"></i></div>
-                <div class="chip"><i class="devicon-javascript-plain"></i></div>
+              <a
+                class="project-image"
+                href="https://marcosromadev.github.io/ProyectoFinanzas/"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  src="assets/finances.jpg"
+                  alt="Aplicación de control de finanzas personales"
+                /><span class="project-index">02</span
+                ><span class="image-arrow">↗</span></a
+              >
+              <div class="project-info">
+                <p class="project-type">Aplicación web</p>
+                <h3>Control de finanzas</h3>
+                <p class="project-description">
+                  Aplicación full stack para registrar ingresos y gastos,
+                  organizarlos por categorías y consultar la evolución del
+                  balance. Incluye dashboard, gráficos con Chart.js, filtros,
+                  ordenación y un CRUD completo conectado a una API REST.
+                </p>
+                <div class="project-footer">
+                  <div class="project-tags">
+                    <span>Java</span><span>Spring</span><span>Chart.js</span>
+                  </div>
+                  <a
+                    class="project-link"
+                    href="https://marcosromadev.github.io/ProyectoFinanzas/"
+                    target="_blank"
+                    rel="noopener"
+                    >Demo ↗</a
+                  >
+                </div>
               </div>
-              <div class="project-links">
-                <a
-                  href="#"
-                  class="btn-primary is-disabled"
-                  aria-disabled="true"
-                  tabindex="-1"
-                  >Demo</a
-                >
-                <a
-                  href="https://github.com/MarcosRomaDev/crosslert"
-                  class="btn-secondary"
-                  >Repo</a
-                >
+            </article>
+
+            <article class="project-card">
+              <a
+                class="project-image"
+                href="https://marcosromadev.github.io/pixel-run/"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  src="assets/pixel-run.jpg"
+                  alt="Pixel Run, videojuego endless runner"
+                /><span class="project-index">03</span
+                ><span class="image-arrow">↗</span></a
+              >
+              <div class="project-info">
+                <p class="project-type">Videojuego · Canvas</p>
+                <h3>Pixel Run</h3>
+                <p class="project-description">
+                  Endless runner 2D creado desde cero, sin motores ni librerías
+                  externas. Implementa el game loop con Canvas, gravedad,
+                  saltos, colisiones AABB, obstáculos generados de forma
+                  procedural, parallax y dificultad progresiva.
+                </p>
+                <div class="project-footer">
+                  <div class="project-tags">
+                    <span>Canvas</span><span>JavaScript</span>
+                  </div>
+                  <a
+                    class="project-link"
+                    href="https://marcosromadev.github.io/pixel-run/"
+                    target="_blank"
+                    rel="noopener"
+                    >Demo ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card-muted">
+              <div class="project-image">
+                <img
+                  src="assets/crosslert.jpg"
+                  alt="Crosslert, aplicación de seguimiento de acciones"
+                /><span class="project-index">04</span
+                ><span class="building">En construcción</span>
+              </div>
+              <div class="project-info">
+                <p class="project-type">Producto digital · En curso</p>
+                <h3>Crosslert</h3>
+                <p class="project-description">
+                  Aplicación multiusuario para seguir acciones y construir una
+                  watchlist personal. El proyecto combina datos de mercado,
+                  gráficas, alertas de precio e indicadores como SMA, EMA y
+                  RSI; actualmente se encuentra en desarrollo.
+                </p>
+                <div class="project-footer">
+                  <div class="project-tags">
+                    <span>JavaScript</span><span>API</span>
+                  </div>
+                  <a
+                    class="project-link"
+                    href="https://github.com/MarcosRomaDev/crosslert"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub ↗</a
+                  >
+                </div>
               </div>
             </article>
           </div>
@@ -185,31 +275,32 @@
       </section>
     </main>
 
-    <footer id="footer">
+    <footer class="footer" id="footer">
       <div class="container">
-        <p class="section-label">— Contacto —</p>
-        <div class="contact-links">
-          <a
-            href="https://github.com/MarcosRomaDev"
-            class="btn-secondary"
-            target="_blank"
-            rel="noopener"
-            >GitHub</a
-          >
-          <a href="mailto:marcos.roma.dev@gmail.com" class="btn-primary"
-            >Email</a
-          >
-          <a
-            href="https://www.linkedin.com/in/marcosromadev/"
-            class="btn-secondary"
-            target="_blank"
-            rel="noopener"
-            >LinkedIn</a
-          >
+        <div class="footer-heading">
+          <p class="eyebrow">04 · Fin de la transmisión</p>
+          <span class="footer-signal"><i></i> SYSTEM ONLINE</span>
+        </div>
+        <div class="footer-grid">
+          <div>
+            <h2>Seguimos<br /><em>construyendo.</em></h2>
+            <p class="footer-copy">Un portfolio en evolución, igual que todo lo que estoy aprendiendo.</p>
+          </div>
+          <div class="footer-connect">
+            <p class="footer-label">Contacto</p>
+            <a class="footer-email" href="mailto:marcos.roma.dev@gmail.com">marcos.roma.dev@gmail.com <span>↗</span></a>
+            <div class="footer-socials">
+              <a href="https://github.com/MarcosRomaDev" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+              <a href="https://www.linkedin.com/in/marcosromadev/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Marcos Romá</span>
+          <span>System online · Learning mode</span>
         </div>
       </div>
     </footer>
-
     <script src="js/main.js"></script>
   </body>
 </html>
