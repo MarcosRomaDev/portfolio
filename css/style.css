@@ -45,6 +45,7 @@ h1 { font-size: clamp(3.8rem, 8vw, 8.6rem); line-height: .9; margin: 2rem 0 2.2r
 .button-dark { background: var(--lime); color: var(--paper); transition: box-shadow .2s ease, transform .2s ease; }
 .button-dark:hover { box-shadow: 0 0 24px rgba(186,255,0,.5); transform: translateY(-3px); }
 .button span { color: var(--paper); font-size: 1.2rem; line-height: .7; }
+.button span, .text-link span, .projects-count span, .image-arrow, .project-link, .footer-email, .footer-socials span, .hero-orbit { font-variant-emoji: text; }
 .text-link { border-bottom: 1px solid var(--ink); font: 600 .75rem var(--display); padding-bottom: .45rem; text-transform: uppercase; }
 .text-link span { color: var(--lime); font-size: 1.1rem; margin-left: .8rem; }
 .hero-visual { animation: hero-visual-in 1s .15s cubic-bezier(.2,.8,.2,1) both; position: relative; transform: rotate(3deg); }
