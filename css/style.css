@@ -45,6 +45,14 @@ h1 { font-size: clamp(3.8rem, 8vw, 8.6rem); line-height: .9; margin: 2rem 0 2.2r
 .button-dark { background: var(--lime); color: var(--paper); transition: box-shadow .2s ease, transform .2s ease; }
 .button-dark:hover { box-shadow: 0 0 24px rgba(186,255,0,.5); transform: translateY(-3px); }
 .button span { color: var(--paper); font-size: 1.2rem; line-height: .7; }
+.icon-arrow { display: inline-block; height: .7em; position: relative; width: .8em; }
+.icon-arrow::before { border-color: currentColor; border-style: solid; content: ""; display: block; height: .42em; position: absolute; width: .42em; }
+.icon-arrow-up-right::before { border-width: 1.5px 1.5px 0 0; right: .04em; top: .1em; }
+.icon-arrow-up-right::after { background: currentColor; content: ""; height: 1.5px; position: absolute; right: .04em; top: .29em; transform: rotate(-45deg); transform-origin: right center; width: .82em; }
+.icon-arrow-down-right::before { border-width: 0 1.5px 1.5px 0; bottom: .08em; right: .04em; }
+.icon-arrow-down-right::after { background: currentColor; content: ""; height: 1.5px; position: absolute; right: .04em; top: .28em; transform: rotate(45deg); transform-origin: right center; width: .82em; }
+.icon-arrow-down::before { border-width: 0 1.5px 1.5px 0; bottom: .02em; left: .16em; transform: rotate(45deg); }
+.icon-arrow-down::after { background: currentColor; content: ""; height: 1.5px; left: .37em; position: absolute; top: .02em; width: 1.5px; }
 .button span, .text-link span, .projects-count span, .image-arrow, .project-link, .footer-email, .footer-socials span, .hero-orbit { font-variant-emoji: text; }
 .text-link { border-bottom: 1px solid var(--ink); font: 600 .75rem var(--display); padding-bottom: .45rem; text-transform: uppercase; }
 .text-link span { color: var(--lime); font-size: 1.1rem; margin-left: .8rem; }
