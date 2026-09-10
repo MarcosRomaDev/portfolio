@@ -4,7 +4,7 @@
 
 Código fuente de mi portfolio personal como estudiante de segundo de Desarrollo de Aplicaciones Web (DAW).
 
-[Ver portfolio](https://www.marcosroma.dev/) · [Ver repositorio](https://github.com/MarcosRomaDev/Portfolio) · [Contactar](mailto:marcos.roma.dev@gmail.com)
+[Ver portfolio](https://www.marcosroma.dev/) · [Contactar](mailto:marcos.roma.dev@gmail.com)
 
 ## Sobre este repositorio
 
