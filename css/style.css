@@ -45,6 +45,7 @@ img {
   inset: 0 0 auto;
   z-index: 10;
   transition: box-shadow 0.25s ease;
+  -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
 .site-header.scrolled {
@@ -837,7 +838,7 @@ h1 {
   }
   .hero-grid {
     display: block;
-    min-height: auto;
+    min-height: 0;
   }
   h1 {
     font-size: clamp(3.35rem, 15vw, 6rem);
