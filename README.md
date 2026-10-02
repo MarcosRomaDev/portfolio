@@ -25,6 +25,7 @@ El portfolio publicado contiene la información completa de cada proyecto. Este 
 | Proyecto | Tipo / estado | Enlace |
 |---|---|---|
 | MSCH Diseño y Construcción | Web corporativa · 2026 | [Visitar web](https://www.msch.es) |
+| ShortsOff | Extensión de navegador | [Chrome Web Store](https://chromewebstore.google.com/detail/shortsoff-youtube-shorts/llklnhhnkofkkfohhnfgmlhiephdhjlm?authuser=1&hl=es) |
 | Control de finanzas | Aplicación web | [Demo](https://marcosromadev.github.io/finanzas-CRUD/) |
 | Pixel Run | Minijuego · Canvas | [Demo](https://marcosromadev.github.io/pixel-run/) |
 | Crosslert | Producto digital · En desarrollo | [GitHub](https://github.com/MarcosRomaDev/crosslert) |

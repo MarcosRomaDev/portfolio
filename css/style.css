@@ -515,6 +515,9 @@ h1 {
 .projects-grid .project-card:nth-child(4) {
   transition-delay: 0.24s;
 }
+.projects-grid .project-card:nth-child(5) {
+  transition-delay: 0.32s;
+}
 .section-heading h2,
 .projects-heading h2,
 .footer h2 {
@@ -629,6 +632,16 @@ h1 {
 }
 .project-image-msch {
   background: #d7d1c6 url("../assets/msch.png") center top / cover;
+}
+.project-image-shortsoff {
+  background: linear-gradient(135deg, #ff003c, #7b112d 52%, #111827);
+}
+.project-image-shortsoff img {
+  object-fit: contain;
+  padding: 1rem;
+}
+.project-image-shortsoff::after {
+  display: none;
 }
 .project-image::after {
   background: linear-gradient(90deg, rgba(17, 28, 24, 0.7), transparent 65%);
